@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff; /* Blue header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #343a40; /* Dark gray navigation background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff; /* White link color */
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #666; /* Darker gray background on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007bff; /* Blue footer background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Form styles */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

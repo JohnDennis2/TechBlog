@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Blog</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+       
+
+        <section>
+            <h2>WELCOME TO THE BLOG POST!</h2>
+            <h2>here you can find the latest news about tech</h2>
+        </section>
+        <section id="signupSection">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="signupUsername" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="signupPassword" placeholder="Enter your password">
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="loginSection">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; tech blog website</p>
+    </footer>
+
+    <!-- Include Handlebars template -->
+    <script id="login-template" type="text/x-handlebars-template">
+        <h2>Welcome, {{username}}!</h2>
+    </script>
+
+    <!-- Include Handlebars library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- Include your JavaScript file where you'll handle form submission and rendering -->
+    <script src="script.js"></script>
+</body>
+</html>

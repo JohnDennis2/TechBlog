@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fund My Project!</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        <span role="img" aria-label="money">💸</span>
+        <a href="/">Blogs!!</a>
+      </h1>
+        <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/blogpost">Make a Post</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a id="logout">Logout</a></li>
+            
+        </ul>
+    </nav>
+    </header>
+     <section>
+            <h2>WELCOME TO THE BLOG POST!</h2>
+            <h2>here you can find the latest news about tech</h2>
+        </section>
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+    
+    <footer>
+        <p>&copy; tech blog website</p>
+    </footer>
+
+    <!-- Include Handlebars template -->
+    <script id="login-template" type="text/x-handlebars-template">
+        {{!-- <h2>Welcome, {{username}}!</h2> --}}
+    </script>
+
+    <!-- Include Handlebars library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- Include your JavaScript file where you'll handle form submission and rendering -->
+    <script src="/js/script.js"></script>
+  </div>
+
+  <!-- Render script for logged in users only -->
+  {{!-- {{#if logged_in}} --}}
+  <script src="/js/logout.js"></script>
+  {{!-- {{/if}} --}}
+</body>
+
+</html>
